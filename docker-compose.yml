@@ -1,0 +1,10 @@
+services:
+  h5ai:
+    image: yude/h5ai
+    build: .
+    restart: always
+    container_name: h5ai
+    volumes:
+      - /mnt/data5/h5ai:/h5ai
+    ports:
+      - 8801:80/tcp
